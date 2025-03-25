@@ -1,14 +1,149 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name = "author" content = "Філіпович Дмитро">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оголошення</title>
+  <meta charset="UTF-8">
+  <meta name="author" content="Філіпович Дмитро">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Новини - Деталі</title>
+  <style>
+   
+  </style>
 </head>
 <body>
-    <h1>Список оголошень</h1>
-    <p>Оголошення будуть з'являтися тут.</p>
-    <a href="index.html">Назад на головну</a>
+  <nav>
+    <ul>
+      <li><a href="index.html">Головна</a></li>
+      <li><a href="ads.html">Новини</a></li>
+      <li><a href="submit.html">Додати новину</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h2 id="news1">Економіка: прогноз на 2025 рік</h2>
+    <p>Аналітики очікують позитивні зміни в економічній сфері. Додаткові деталі у статті.</p>
+    
+    <h2 id="news2">Спорт: Україна перемагає</h2>
+    <p>Нещодавній матч став знаковим для національної збірної, завдяки чому було досягнуто перемоги.</p>
+    
+    <h2 id="news3">Наука: нові відкриття</h2>
+    <p>Дослідники зробили прорив у розробці нових технологій, що можуть змінити наше життя.</p>
+    
+    <h2 id="news4">Технології: майбутнє інновацій</h2>
+    <p>Експерти вважають, що технологічні інновації визначать тренди наступного десятиліття.</p>
+  </article>
+  
+  <div class="goto-tech">
+    <p>Дізнайтеся більше про майбутнє інновацій у нашому розділі «Технології»:</p>
+    <a href="#news4">Перейти до розділу «Технології»</a>
+  </div>
+  
+  <section class="table">
+    <h3>Галерея новин</h3>
+    <table>
+      <caption>Галерея новин</caption>
+      <thead>
+        <tr>
+          <th>Зображення</th>
+          <th>Заголовок</th>
+          <th>Опис</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a href="https://dl2022.khadi-kh.com/pluginfile.php/279558/course/section/43925/image.png" target="_blank">
+              <img src="https://dl2022.khadi-kh.com/pluginfile.php/279558/course/section/43925/image.png" width="50" height="50" alt="Новина 1">
+            </a>
+          </td>
+          <td><a href="#news1" style="color: blue;">Економіка</a></td>
+          <td>Прогноз економічного зростання</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cRrOGhbxZYARM9_nw6ljxoCevBywbdLq9A&s" target="_blank">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_cRrOGhbxZYARM9_nw6ljxoCevBywbdLq9A&s" width="50" height="50" alt="Новина 2">
+            </a>
+          </td>
+          <td><a href="#news2" style="color: blue;">Спорт</a></td>
+          <td>Важлива перемога</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://vstup.kpi.kharkov.ua/wp-content/uploads/2018/01/162-1-promislova-biotehnologija-bakalavr-1--460x460.jpg" target="_blank">
+              <img src="https://vstup.kpi.kharkov.ua/wp-content/uploads/2018/01/162-1-promislova-biotehnologija-bakalavr-1--460x460.jpg" width="50" height="50" alt="Новина 3">
+            </a>
+          </td>
+          <td><a href="#news3" style="color: blue;">Наука</a></td>
+          <td>Нове відкриття</td>
+        </tr>
+        <tr>
+          <td>
+            <a href="https://robotics.ua/content/uploads/images/blog/-facts/personalyniye-roboty-pomoschniky/anki-cozmo.png" target="_blank">
+              <img src="https://robotics.ua/content/uploads/images/blog/-facts/personalyniye-roboty-pomoschniky/anki-cozmo.png" width="50" height="50" alt="Новина 4">
+            </a>
+          </td>
+          <td><a href="#news4" style="color: blue;">Технології</a></td>
+          <td>Інновації в техніці</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <section class="complex-table">
+    <h3>Аналітичні дані</h3>
+    <table cellspacing="5" cellpadding="10">
+      <colgroup>
+        <col style="background-color:#e0ffff;">
+        <col style="background-color:#f0e68c;">
+        <col style="background-color:#ffe4e1;">
+      </colgroup>
+      <thead>
+        <tr>
+          <th colspan="3">Аналітичні дані</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Економіка</td>
+          <td>Прогноз ВВП</td>
+          <td>3.5% зростання</td>
+        </tr>
+        <tr>
+          <td colspan="2">Дані за останній квартал</td>
+        </tr>
+        <tr>
+          <td rowspan="2">Спорт</td>
+          <td>Міжнародний турнір</td>
+          <td>Перемога 2:1</td>
+        </tr>
+        <tr>
+          <td>Відкриття</td>
+          <td>Нові технології</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  
+  <button id="toggle-btn" onclick="toggleFrame()">Закрити/Відкрити</button>
+  
+  <div id="floating-frame">
+    <h4>Швидкий зв'язок</h4>
+    <p>Телефон: +380 97 123 4567</p>
+    <p>Email: 2005dimalfi@gmail.com</p>
+  </div>
+
+  <script>
+    function toggleFrame() {
+      var frame = document.getElementById('floating-frame');
+      if (frame.style.display === 'none') {
+        frame.style.display = 'block';
+      } else {
+        frame.style.display = 'none';
+      }
+    }
+  </script>
 </body>
 </html>
