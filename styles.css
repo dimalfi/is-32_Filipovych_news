@@ -1,122 +1,202 @@
+
 body {
     font-family: Arial, sans-serif;
     font-size: 16px;
     color: #333;
-    line-height: 1.5;
-    text-align: justify;
-    background-color: #f4f4f4;
-}
-
-
-h1 {
-    font-size: 28px;
-    color: #1e90ff;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #2C3E50;
     text-align: center;
-    font-style: italic;
-}
-
-h2 {
-    font-size: 24px;
-    color: #ff4500;
-    text-align: left;
-}
-
-
-a {
-    color: #0066cc;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+    color: #34495E;
+    margin: 20px 0 10px;
+  }
+  
+ 
+  a {
+    color: #2980B9;
     text-decoration: none;
-}
-
-a:hover {
+  }
+  
+  a:hover {
     text-decoration: underline;
-}
-
-
-a[style] {
-    color: green !important;
-}
-
-
-.formatted-text p {
-    font-family: "Times New Roman", serif;
-    font-size: 18px;
-    color: darkred;
-    font-style: italic;
-}
-
-
-ul {
-    list-style-type: circle;
+  }
+  
+  
+  nav {
+    background: linear-gradient(90deg, #3498DB, #2980B9);
     padding: 10px;
-    background-color: #9d5151;
+  }
+  
+  
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  
+  
+  .content {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
     border-radius: 5px;
-}
-
-ol {
-    list-style-type: upper-roman;
-    padding: 10px;
-    background-color: #914a4a;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+ 
+  .news-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
     border-radius: 5px;
-}
-
-dl {
-    background-color: #815c5c;
-    padding: 10px;
+    background-color: #fcfcfc;
+  }
+  
+  
+  ul {
+    list-style-type: disc;
+    padding: 10px 20px;
+    background-color: #ecf0f1;
     border-radius: 5px;
-}
-
-dt {
-    font-weight: bold;
-    color: #333;
-}
-
-dd {
-    margin-left: 20px;
-}
-
-
-table {
+  }
+  
+  ol {
+    list-style-type: decimal;
+    padding: 10px 20px;
+    background-color: #ecf0f1;
+    border-radius: 5px;
+  }
+  
+  dl {
+    background-color: #ecf0f1;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+ 
+  table {
     width: 100%;
     border-collapse: collapse;
     margin: 20px 0;
-    background-color: #b45d5d;
-}
-
-table, th, td {
-    border: 1px solid #815555;
+    background-color: #fff;
+  }
+  
+  table, th, td {
+    border: 1px solid #ddd;
     padding: 10px;
     text-align: center;
-}
-
-th {
-    background-color: #1e90ff;
-    color: white;
-}
-
-td {
-    background-color: #981616;
-}
-
-#toggle-btn {
-    background-color: #28a745;
-    color: white;
-    padding: 10px;
+  }
+  
+  th {
+    background-color: #2980B9;
+    color: #fff;
+  }
+  
+  td {
+    background-color: #fafafa;
+  }
+  
+  
+  #toggle-btn {
+    background-color: #27ae60;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    display: block;
+    border-radius: 5px;
     margin: 20px auto;
-}
-
-#toggle-btn:hover {
-    background-color: #218838;
-}
-
-#floating-frame {
+    display: block;
+  }
+  
+  #toggle-btn:hover {
+    background-color: #1e8449;
+  }
+  
+  /* Плаваючий блок */
+  #floating-frame {
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background-color: white;
-    padding: 10px;
+    background-color: #fff;
     border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
     display: none;
-}
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  
+  .formatted-text p {
+    font-family: "Times New Roman", serif;
+    font-size: 18px;
+    color: #c0392b;
+    font-style: italic;
+  }
+  
+  .external-link {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .news-lists {
+    background-color: #fdfefe;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 5px;
+  }
+  
+  .goto-tech {
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #f4f6f6;
+    border-left: 5px solid #2980B9;
+  }
+  
+ 
+  .table {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  .complex-table {
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fdfefe;
+    border-radius: 5px;
+  }
+  
+  nav a {
+    color: #ff0000;         
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  h2 + p {
+    color: #000000;         
+    margin-top: 5px;
+  }
+
+  nav > ul > li {
+    padding: 5px 10px;
+    background-color: #605a34;
+    margin: 0 5px;
+    border-radius: 3px;
+  }
+  .news-item > h2 {
+    border-bottom: 2px solid #85f100;
+    padding-bottom: 5px;
+  }
