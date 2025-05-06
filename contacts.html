@@ -7,83 +7,68 @@
   <link rel="stylesheet" href="styles.css">
   <title>Контакти</title>
   <style>
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #fafafa; 
-      text-align: center;        
+    .contact-wrapper {
+      max-width: 600px;
+      margin: 60px auto;
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      text-align: center;
     }
 
-    
-    nav {
-      background: linear-gradient(90deg, #1e90ff, #00fa9a);
-      padding: 10px;
+    .contact-wrapper h1 {
+      color: #2C3E50;
       margin-bottom: 20px;
     }
-    nav ul {
-      list-style: none;
-      text-align: center;
-      margin: 0;
-      padding: 0;
+
+    .contact-wrapper p {
+      font-size: 18px;
+      margin: 10px 0;
     }
-    nav ul li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    nav ul li a {
-      color: #fff;
+
+    .contact-wrapper a {
+      color: #3498db;
       text-decoration: none;
-      padding: 8px 15px;
-      border-radius: 4px;
-      transition: background 0.3s ease;
-    }
-    nav ul li a:hover {
-      background: rgba(255, 255, 255, 0.2);
     }
 
- 
-    .contact-info {
-      display: inline-block;         
-      margin: 40px auto;            
-      background-color: #fff;       
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1); 
+    .contact-wrapper a:hover {
+      text-decoration: underline;
     }
 
-    
-    #toggle-btn {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      z-index: 9999;
-      background-color: #444;
-      color: #fff;
+    #dev-info-btn {
+      margin-top: 25px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #2980B9;
+      color: white;
       border: none;
-      padding: 8px 12px;
+      border-radius: 5px;
       cursor: pointer;
-      border-radius: 4px;
+      transition: background 0.3s;
     }
 
-    
-    #floating-frame {
-      position: fixed;
-      bottom: 60px;
-      right: 10px;
-      width: 250px;
-      background-color: #fff;
-      border: 2px solid #444;
-      padding: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      display: block;
-      border-radius: 5px;
-      text-align: left; 
+    #dev-info-btn:hover {
+      background-color: #1c5984;
     }
-    #floating-frame h4 {
-      margin-top: 0;
+
+    .float-box {
+      margin-top: 40px;
+      text-align: left;
+    }
+
+    @media (max-width: 600px) {
+      .contact-wrapper {
+        margin: 20px;
+        padding: 20px;
+      }
+
+      .float-box {
+        float: none;
+        width: auto;
+        margin: 20px auto;
+      }
+      
     }
   </style>
 </head>
@@ -97,31 +82,26 @@
     </ul>
   </nav>
 
-  <div class="contact-info">
+  <div class="positioned-block">
+    <p>Контактний центр: ми завжди на зв'язку!</p>
+  </div>
+
+  <div class="contact-wrapper">
     <h1>Контактна інформація</h1>
-    <p>Email: <a href="2005dimalfi@gmail.com" style="color: blue;">2005dimalfi@gmail.com</a></p>
+    <p>Email: <a href="mailto:2005dimalfi@gmail.com">2005dimalfi@gmail.com</a></p>
     <p>Телефон: +380 97 123 4567</p>
     <p>Адреса: Київ, вул. Шевченка, 1</p>
+
+    <button id="dev-info-btn">Про розробника</button>
   </div>
 
-  
-  <button id="toggle-btn" onclick="toggleFrame()">Закрити/Відкрити</button>
-  
-  <div id="floating-frame">
-    <h4>Швидкий зв'язок</h4>
-    <p>Телефон: +380 97 123 4567</p>
-    <p>Email: 2005dimalfi@gmail.com</p>
+  <div class="float-box">
+    <p><strong>Години роботи:</strong></p>
+    <ul>
+      <li>Пн-Пт: 9:00-18:00</li>
+      <li>Сб: 10:00-16:00</li>
+      <li>Нд: вихідний</li>
+    </ul>
   </div>
 
-  <script>
-    function toggleFrame() {
-      var frame = document.getElementById('floating-frame');
-      if (frame.style.display === 'none') {
-        frame.style.display = 'block';
-      } else {
-        frame.style.display = 'none';
-      }
-    }
-  </script>
-</body>
-</html>
+  <script src="lab.js"></script>

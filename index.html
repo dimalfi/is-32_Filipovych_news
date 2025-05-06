@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
   <title>Новини - Головна</title>
-  <style>
-    
-  </style>
 </head>
 <body>
-  <header>Новини України</header>
+  <header>
+    <span>Новини
+    </span> України
+  </header>
+
   <nav>
     <ul>
       <li><a href="index.html">Головна</a></li>
@@ -20,54 +21,78 @@
       <li><a href="contacts.html">Контакти</a></li>
     </ul>
   </nav>
-  
+
+  <div class="positioned-block">
+    <p>Свіжі оповіщення: важливі новини прямо зараз!</p>
+  </div>
+
   <div class="content">
     <h1>Останні новини</h1>
+
+    <div class="float-box">
+      <p><strong>Останні тенденції:</strong></p>
+      <ul>
+        <li>Економіка</li>
+        <li>Спорт</li>
+        <li>Наука</li>
+        <li>Технології</li>
+      </ul>
+    </div>
+
     <div class="news-item">
       <h2><a href="ads.html#news1" style="color: rgb(0, 0, 0);">Економіка: прогноз на 2025 рік</a></h2>
       <p>Експерти прогнозують ріст ВВП наступного року, що може вплинути на всі галузі.</p>
-      <img src="https://img.epravda.com.ua/epravda/images/doc/a/a/25072/aad0138-independanca1583.jpg" alt="Економіка" style="width:100%; max-width:300px;">
+      <img src="https://img.epravda.com.ua/epravda/images/doc/a/a/25072/aad0138-independanca1583.jpg"
+           alt="Економіка" style="width:100%; max-width:300px;">
     </div>
+
     <div class="news-item">
       <h2><a href="ads.html#news2" style="color: blue;">Спорт: Україна перемагає</a></h2>
       <p>Національна збірна України здобула важливу перемогу на міжнародному турнірі.</p>
-      <img src="https://static.ukrinform.com/photos/2020_02/thumb_files/630_360_1582194144-157.jpg" alt="Спорт" style="width:100%; max-width:300px;">
+      <img src="https://static.ukrinform.com/photos/2020_02/thumb_files/630_360_1582194144-157.jpg"
+           alt="Спорт" style="width:100%; max-width:300px;">
     </div>
+
     <div class="news-item">
       <h2><a href="ads.html#news3" style="color: blue;">Наука: нові відкриття</a></h2>
       <p>Українські вчені зробили прорив у сфері біотехнологій.</p>
-      <img src="https://cdn-blog.superprof.com/blog_ua/wp-content/uploads/2022/04/dna.jpg" alt="Наука" style="width:100%; max-width:300px;">
+      <img src="https://cdn-blog.superprof.com/blog_ua/wp-content/uploads/2022/04/dna.jpg"
+           alt="Наука" style="width:100%; max-width:300px;">
     </div>
-    
+
     <div class="formatted-text">
-      <p><font face="Times New Roman" size="4" color="darkred"><i>Цей сайт присвячено останнім новинам з України та світу. Ми публікуємо лише перевірену інформацію.</i></font></p>
+      <p>
+        <font face="Times New Roman" size="4" color="darkred">
+          <i>Цей сайт присвячено останнім новинам з України та світу. Ми публікуємо лише перевірену інформацію.</i>
+        </font>
+      </p>
     </div>
-    
+
     <div class="external-link">
-      <p>Додаткова інформація на <a href="https://tsn.ua/" target="_blank" style="color: blue;">офіційному сайті</a>.</p>
+      <p>Додаткова інформація на
+        <a href="https://tsn.ua/" target="_blank" style="color: blue;">офіційному сайті</a>.
+      </p>
     </div>
   </div>
+
   <div class="news-lists" style="background-color: rgba(255,255,255,0.8); padding: 20px; margin: 20px auto; width: 80%; border-radius: 5px;">
     <h2 style="text-align: center; color: #1e90ff;">Популярні категорії</h2>
-
     <ul type="circle" style="font-family: Arial; font-size: 16px; color: #333; text-align: left;">
       <li>Економіка</li>
       <li>Спорт</li>
       <li>Наука</li>
       <li>Технології</li>
     </ul>
-    
+
     <h2 style="text-align: center; color: #1e90ff;">Останні новини</h2>
- 
     <ol type="I" style="font-family: Arial; font-size: 16px; color: #333; text-align: left;">
       <li>Економіка: прогноз на 2025 рік</li>
       <li>Спорт: Україна перемагає</li>
       <li>Наука: нові відкриття</li>
       <li>Технології: майбутнє інновацій</li>
     </ol>
-    
+
     <h2 style="text-align: center; color: #1e90ff;">Термінологія</h2>
-   
     <dl style="font-family: Arial; font-size: 16px; color: #333; text-align: left;">
       <dt style="font-weight: bold;">Інновації</dt>
       <dd>Нові підходи та технології, що змінюють ринок.</dd>
@@ -77,12 +102,8 @@
       <dd>Оцінка можливого розвитку подій у майбутньому.</dd>
     </dl>
   </div>
-  
-  
-  
-  
+
   <button id="toggle-btn" onclick="toggleFrame()">Закрити/Відкрити</button>
-  
 
   <div id="floating-frame">
     <h4>Швидкий зв'язок</h4>
@@ -90,15 +111,40 @@
     <p>Email: 2005dimalfi@gmail.com</p>
   </div>
 
+  <!-- Існуючий скрипт для переключення фрейму -->
   <script>
     function toggleFrame() {
       var frame = document.getElementById('floating-frame');
-      if (frame.style.display === 'none') {
-        frame.style.display = 'block';
-      } else {
-        frame.style.display = 'none';
-      }
+      frame.style.display = frame.style.display === 'none' ? 'block' : 'none';
     }
   </script>
+
+
+  <script>
+  
+    alert("Ласкаво просимо на новинний сайт!");
+    const userName = prompt("Як вас звати?");
+    if (confirm(`Бажаєте отримати персональні рекомендації новин, ${userName}?`)) {
+      alert("Ось найактуальніші новини для вас!");
+    } else {
+      alert("Переглядайте рубрики на свій розсуд.");
+    }
+
+    // Зміна фону на 30 секунд
+    const origBg = document.body.style.backgroundColor;
+    document.body.style.backgroundColor = "#ffe4e1";
+    setTimeout(() => {
+      document.body.style.backgroundColor = origBg;
+    }, 30000);
+
+    
+    if (confirm("Перейти до сторінки контактів за деталями?")) {
+      window.location.href = "contacts.html";
+    }
+  </script>
+
+
+  <script src="script.js"></script>
 </body>
 </html>
+<script src="mouse.js"></script>

@@ -7,109 +7,7 @@
   <link rel="stylesheet" href="styles.css">
   <title>Додати новину</title>
   <style>
-
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      color: #333;
-      background-color: #fafafa; 
-      text-align: center;        
-    }
-
-   
-    nav {
-      background: linear-gradient(90deg, #1e90ff, #00fa9a);
-      padding: 10px;
-      margin-bottom: 20px;
-    }
-    nav ul {
-      list-style: none;
-      text-align: center;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li {
-      display: inline-block;
-      margin: 0 10px;
-    }
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      padding: 8px 15px;
-      border-radius: 4px;
-      transition: background 0.3s ease;
-    }
-    nav ul li a:hover {
-      background: rgba(255, 255, 255, 0.2);
-    }
-
-    h1 {
-      margin-top: 20px;
-    }
-
-    form {
-      display: inline-block;         
-      text-align: left;             
-      background-color: #fff;       
-      padding: 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1); 
-      width: 300px; 
-      margin-bottom: 40px;
-    }
-    form label {
-      display: block;
-      margin: 10px 0 5px;
-    }
-    form input[type="text"],
-    form textarea {
-      width: 100%;
-      padding: 8px;
-      margin: 5px 0;
-      box-sizing: border-box;
-    }
-    form input[type="submit"] {
-      padding: 10px 20px;
-      background-color: #444;
-      color: #fff;
-      border: none;
-      cursor: pointer;
-      margin-top: 10px;
-      border-radius: 4px;
-    }
-
-  
-    #toggle-btn {
-      position: fixed;
-      bottom: 10px;
-      right: 10px;
-      z-index: 9999;
-      background-color: #444;
-      color: #fff;
-      border: none;
-      padding: 8px 12px;
-      cursor: pointer;
-      border-radius: 4px;
-    }
-
-    
-    #floating-frame {
-      position: fixed;
-      bottom: 60px;
-      right: 10px;
-      width: 250px;
-      background-color: #fff;
-      border: 2px solid #444;
-      padding: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.5);
-      display: block;
-      border-radius: 5px;
-      text-align: left; 
-    }
-    #floating-frame h4 {
-      margin-top: 0;
-    }
+    /* Додаткові inline стилі, якщо необхідно */
   </style>
 </head>
 <body>
@@ -122,8 +20,22 @@
     </ul>
   </nav>
 
+  <!-- Новий позиціонований блок -->
+  <div class="positioned-block">
+      <p>Важлива інформація: перевірте дані перед відправкою!</p>
+  </div>
+
   <h1>Додати новину</h1>
-  <p>Заповніть форму нижче, щоб додати новину:</p>
+  <p>Заповніть форму нижче, щоб додати новину: <span style="color: #e74c3c;">(всі поля обов'язкові)</span></p>
+
+  <!-- Новий плаваючий блок -->
+  <div class="float-box">
+      <p><strong>Поради:</strong></p>
+      <ul>
+         <li>Вказуйте правильний заголовок</li>
+         <li>Опис має бути інформативним</li>
+      </ul>
+  </div>
 
   <form>
     <label for="title">Заголовок:</label>
@@ -155,3 +67,4 @@
   </script>
 </body>
 </html>
+<script src="lab.js"></script>
